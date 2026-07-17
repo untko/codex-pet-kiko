@@ -1,0 +1,4 @@
+.DS_Store
+*.swp
+*.tmp
+run/v2/validation-local.json

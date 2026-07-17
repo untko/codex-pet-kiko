@@ -1,0 +1,135 @@
+# Notes on creating the Kiko Codex pet
+
+Last updated: 2026-07-17 (Asia/Bangkok)
+
+## Goal
+
+Create, install, validate, and package a custom animated Codex pet: a cute gecko that changes color and expression with task conditions. Preserve the complete Codex nine-state animation contract and keep the whole workflow shareable.
+
+## Final identity
+
+Kiko is an original upright baby gecko with:
+
+- a slim narrow torso and long neck-to-belly line
+- a softly wedge-shaped head rather than a round mascot head
+- huge warm dark eyes, tiny nostrils, and a confident small smile
+- a cream throat and belly
+- pale cheek freckles and darker crown/back speckles
+- short splayed limbs with rounded adhesive toe pads
+- a long low tail that curves beside the body
+- a softly modeled kawaii 3D-sticker rendering
+
+The user-provided reference image was used only for broad anatomy, proportion, and personality cues. It is not included in this repository.
+
+## Contract and palette
+
+The original standard-animation atlas is `1536 × 1872`, divided into `192 × 208` cells in an 8-column by 9-row layout:
+
+1. `idle` — 6 mint-green frames
+2. `running-right` — 8 aqua frames
+3. `running-left` — 8 aqua frames
+4. `waving` — 4 sunny-yellow frames
+5. `jumping` — 5 coral-orange frames
+6. `failed` — 8 soft-blue frames
+7. `waiting` — 6 warm-amber frames
+8. `running` — 6 teal focused-work frames
+9. `review` — 6 lavender frames
+
+The packaged v2 atlas preserves those nine rows and adds two look-direction rows, producing an 8-column by 11-row `1536 × 2288` atlas. Row 9 contains `000` through `157.5`; row 10 contains `180` through `337.5`, in clockwise 22.5-degree steps. Unused atlas cells are fully transparent.
+
+## V2 look-direction upgrade
+
+Kiko's v2 look family keeps both feet, pelvis, lower torso, and low tail anchored. The complete physical eyeballs lead the gaze, with restrained head yaw or pitch and a smoothly bending neck. The original warm brown-and-gold eye construction, green/turquoise body, cream belly, scale, and facial proportions remain consistent.
+
+The first row-10 attempt failed blind left/right QA because its left-half poses still read screen-right. The second corrected the gaze but rotated the torso and flipped the tail across the row boundary. The accepted third attempt keeps the front-facing torso and tail registered while the eyes, snout, head, and neck turn screen-left.
+
+The completed 16-pose loop passed cardinal-anchor review, three-reviewer blind direction validation, labeled per-direction semantic review, deterministic continuity review, final visual QA, and v2 atlas validation. The review evidence is preserved under `run/v2/qa/`.
+
+## Visual generation workflow
+
+The built-in Codex image-generation path created one canonical base and state-specific horizontal strips. Each generated row used two grounding images:
+
+1. the matching layout guide for slot count and spacing
+2. the accepted canonical Kiko base for identity
+
+The accepted rightward strip was safe to mirror because Kiko has no text, logos, directional markings, asymmetric identity features, or directional lighting. The leftward row was therefore derived with the bundled framewise mirror helper, preserving frame order and cadence.
+
+### Accepted and repaired rows
+
+- `idle`: accepted; calm six-frame blink and head-bob loop
+- `running-right`: regenerated after the first version crossed slot boundaries; the accepted replacement uses a smaller sprite and compact tail
+- `running-left`: deterministically mirrored from the repaired rightward strip
+- `waving`: accepted; four prop-free hand poses
+- `jumping`: accepted; five-frame vertical hop with no floor effects
+- `failed`: regenerated after the first result drifted through unrelated colors/actions
+- `waiting`: regenerated after the first result introduced a question mark and heart sign
+- `running`: one transport retry was followed by a visual repair to remove invented work props
+- `review`: regenerated after the first result recapped unrelated state colors
+
+Rejected visual outputs are retained in `run/rejected/`.
+
+## Transparency cleanup
+
+Generated strips used a flat magenta chroma background. A first hard-threshold extraction passed structural checks but left a thin magenta antialias fringe. The final cleanup used the installed image-generation helper with auto border sampling, a soft matte, despill, and one-pixel edge contraction:
+
+```bash
+python ~/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py \
+  --input run/decoded/idle.png \
+  --out run/decoded-clean/idle.png \
+  --auto-key border \
+  --soft-matte \
+  --transparent-threshold 12 \
+  --opaque-threshold 220 \
+  --despill \
+  --edge-contract 1 \
+  --force
+```
+
+The lavender review row is closer to magenta than the other palettes, so soft matting partially erased its body. That row instead used a palette-safe hard key plus despill:
+
+```bash
+python ~/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py \
+  --input run/decoded/review.png \
+  --out run/decoded-clean/review.png \
+  --auto-key border \
+  --tolerance 60 \
+  --despill \
+  --edge-contract 1 \
+  --force
+```
+
+## Deterministic assembly
+
+The bundled `hatch-pet` helpers performed frame extraction, inspection, atlas composition, validation, contact-sheet creation, and GIF rendering. `scripts/rebuild-atlas.sh` captures the portable rebuild commands.
+
+The packaged v2 validation result is:
+
+```json
+{
+  "ok": true,
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 2288,
+  "columns": 8,
+  "rows": 11,
+  "sprite_version_number": 2,
+  "transparent_rgb_residue_pixels": 0,
+  "errors": [],
+  "warnings": []
+}
+```
+
+Frame inspection also reported `ok: true` with no errors or warnings. The final contact sheet, all nine motion loops, and the 16-direction look family were visually inspected for identity, palette, clipping, detached artifacts, state semantics, direction meaning, and continuity.
+
+## Package
+
+The installable package contains only:
+
+```text
+kiko/
+  pet.json
+  spritesheet.webp
+```
+
+`pet.json` sets `spriteVersionNumber` to `2`. Copy that directory to `~/.codex/pets/kiko` to install it locally.

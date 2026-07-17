@@ -1,0 +1,28 @@
+{
+  "repairs": [
+    {
+      "job": "look-row-10",
+      "attempt": 1,
+      "classification": "visual semantics",
+      "severity": "major",
+      "evidence": "Two of three isolated blind reviewers classified every horizontal A/B pair as screen-right/screen-right; the hard 090-vs-270 cardinal pair failed.",
+      "root_condition": "The generated second half-loop retained row 9's screen-right head yaw and did not adopt the approved 270 screen-left cardinal family.",
+      "next_action": "Regenerate the complete coherent row 10 with the fourth approved cardinal pose as a hard screen-left anchor for 202.5 through 337.5.",
+      "properties_to_preserve": "Kiko identity, neutral green palette, full physical eye construction, shared scale, planted feet, baseline, vertical direction progression, and clean pose separation."
+    },
+    {
+      "job": "look-row-10",
+      "attempt": 2,
+      "classification": "continuity and body registration",
+      "severity": "major",
+      "evidence": "The screen-left head directions passed labeled review, but the torso rotated into profile and the tail flipped from screen-left to screen-right at 157.5->180 and 337.5->000.",
+      "root_condition": "The generator changed the whole body orientation to achieve leftward gaze instead of keeping Kiko's planted lower body anchored.",
+      "next_action": "Regenerate the complete row with a front-facing torso, both feet planted, tail locked low on screen-left, and direction expressed through full eyes, head, snout, and neck.",
+      "properties_to_preserve": "Correct screen-left head yaw, Kiko identity, green palette, physical eyes, vertical direction progression, scale, baseline, and clean separation."
+    }
+  ],
+  "result": {
+    "accepted_attempt": 3,
+    "evidence": "All seven left-half poses project the nose, eye aim, and head screen-left; the front belly, both feet, lower body, and tail remain registered with the tail low on screen-left in every cell; both row-boundary joins are continuous."
+  }
+}

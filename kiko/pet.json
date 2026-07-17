@@ -1,0 +1,7 @@
+{
+  "id": "kiko",
+  "displayName": "Kiko",
+  "description": "A cute color-changing gecko whose colors and expressions react to Codex task conditions.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}
