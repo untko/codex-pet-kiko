@@ -1,16 +1,11 @@
 {
   "visual_qa": "pass",
-  "qa_note": "Kiko preserves the established soft 3D gecko identity while adding intentional idle camouflage, smooth state-color ramps, and a grounded alternating gait in both directions.",
-  "checks": {
-    "identity_and_style": "pass",
-    "idle_alpha_sequence": "pass: 1.00, 0.82, 0.55, 0.35, 0.65, 1.00",
-    "state_palette": "pass: yellow, orange, blue, gold, aqua, and purple remain visible with green/intermediate bookends",
-    "running_right_gait": "pass: distinct contact, compression, passing, and lift phases alternate the prominent near/far legs",
-    "running_left_gait": "pass: framewise mirror preserves cadence and grounded contacts",
-    "look_directions": "pass: coherent clockwise loop with clear cardinal directions",
-    "atlas_validation": "pass: v2 1536x2288 RGBA atlas with zero errors, warnings, chroma fringe, or transparent RGB residue",
-    "frame_inspection": "pass: zero errors and warnings"
-  },
-  "review_warnings": [],
+  "qa_note": "Kiko's nine standard animations and 16-direction loop preserve the established 3D gecko identity, read correctly at pet size, and pass all deterministic and blind QA gates.",
+  "review_warnings": [
+    "157.5->180 and 337.5->000 are metric outliers, but normal-size review shows natural foreshortening with planted feet, stable torso and tail, and no conspicuous snap or reversal.",
+    "Reported lower-body transparency is intentional separation between feet, legs, and tail rather than an interior body hole.",
+    "Legacy standard rows retain intentional state-coded hue shifts while preserving identity."
+  ],
+  "repair_rows": [],
   "reviewed_by": "independent final visual QA worker"
 }
