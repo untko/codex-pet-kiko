@@ -1,6 +1,17 @@
 {
   "ok": true,
-  "frames_root": "run/frames",
+  "frames_root": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
   "errors": [],
   "warnings": [],
   "rows": [
@@ -15,7 +26,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/idle/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13441,
@@ -30,7 +41,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/idle/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13373,
@@ -45,7 +56,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/idle/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13207,
@@ -60,10 +71,10 @@
         },
         {
           "index": 3,
-          "file": "run/frames/idle/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13089,
+          "nontransparent_pixels": 12810,
           "bbox": [
             25,
             5,
@@ -75,7 +86,7 @@
         },
         {
           "index": 4,
-          "file": "run/frames/idle/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13107,
@@ -90,7 +101,7 @@
         },
         {
           "index": 5,
-          "file": "run/frames/idle/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/idle/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13165,
@@ -116,123 +127,123 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/running-right/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15082,
+          "nontransparent_pixels": 10894,
           "bbox": [
-            5,
-            10,
-            187,
-            198
+            12,
+            32,
+            179,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 451
         },
         {
           "index": 1,
-          "file": "run/frames/running-right/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14493,
+          "nontransparent_pixels": 11123,
           "bbox": [
             5,
-            7,
+            31,
             187,
-            200
+            181
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 483
         },
         {
           "index": 2,
-          "file": "run/frames/running-right/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15787,
+          "nontransparent_pixels": 10875,
           "bbox": [
-            5,
-            6,
-            187,
-            202
+            7,
+            29,
+            184,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 433
         },
         {
           "index": 3,
-          "file": "run/frames/running-right/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14831,
+          "nontransparent_pixels": 10819,
           "bbox": [
-            5,
-            10,
-            187,
-            198
+            9,
+            29,
+            182,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 459
         },
         {
           "index": 4,
-          "file": "run/frames/running-right/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15484,
+          "nontransparent_pixels": 10497,
           "bbox": [
             9,
-            5,
-            182,
-            203
+            30,
+            183,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 433
         },
         {
           "index": 5,
-          "file": "run/frames/running-right/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15639,
+          "nontransparent_pixels": 10190,
           "bbox": [
-            5,
-            6,
-            187,
-            201
+            13,
+            27,
+            179,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 410
         },
         {
           "index": 6,
-          "file": "run/frames/running-right/06.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14321,
+          "nontransparent_pixels": 10562,
           "bbox": [
-            5,
-            11,
-            187,
-            197
+            9,
+            26,
+            183,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 453
         },
         {
           "index": 7,
-          "file": "run/frames/running-right/07.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-right/07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16007,
+          "nontransparent_pixels": 10149,
           "bbox": [
-            5,
-            6,
-            187,
-            202
+            18,
+            29,
+            173,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 403
         }
       ]
     },
@@ -247,123 +258,123 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/running-left/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15082,
+          "nontransparent_pixels": 10861,
           "bbox": [
-            5,
-            10,
-            187,
-            198
+            12,
+            32,
+            179,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 442
         },
         {
           "index": 1,
-          "file": "run/frames/running-left/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14493,
+          "nontransparent_pixels": 11123,
           "bbox": [
             5,
-            7,
+            31,
             187,
-            200
+            181
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 483
         },
         {
           "index": 2,
-          "file": "run/frames/running-left/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15787,
+          "nontransparent_pixels": 10869,
           "bbox": [
-            5,
-            6,
-            187,
-            202
+            7,
+            29,
+            184,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 444
         },
         {
           "index": 3,
-          "file": "run/frames/running-left/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14831,
+          "nontransparent_pixels": 10828,
           "bbox": [
-            5,
-            10,
-            187,
-            198
+            9,
+            29,
+            182,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 476
         },
         {
           "index": 4,
-          "file": "run/frames/running-left/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15484,
+          "nontransparent_pixels": 10495,
           "bbox": [
             9,
-            5,
-            182,
-            203
+            30,
+            183,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 424
         },
         {
           "index": 5,
-          "file": "run/frames/running-left/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15639,
+          "nontransparent_pixels": 10190,
           "bbox": [
-            5,
-            6,
-            187,
-            201
+            13,
+            27,
+            179,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 410
         },
         {
           "index": 6,
-          "file": "run/frames/running-left/06.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14321,
+          "nontransparent_pixels": 10546,
           "bbox": [
-            5,
-            11,
-            187,
-            197
+            10,
+            26,
+            182,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 435
         },
         {
           "index": 7,
-          "file": "run/frames/running-left/07.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running-left/07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16007,
+          "nontransparent_pixels": 10133,
           "bbox": [
-            5,
-            6,
-            187,
-            202
+            18,
+            29,
+            173,
+            182
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 0
+          "chroma_adjacent_pixels": 390
         }
       ]
     },
@@ -378,7 +389,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/waving/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waving/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13475,
@@ -393,7 +404,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/waving/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waving/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13980,
@@ -408,7 +419,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/waving/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waving/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14017,
@@ -423,7 +434,7 @@
         },
         {
           "index": 3,
-          "file": "run/frames/waving/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waving/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13161,
@@ -449,7 +460,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/jumping/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/jumping/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13417,
@@ -464,7 +475,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/jumping/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/jumping/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 10848,
@@ -479,7 +490,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/jumping/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/jumping/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 9636,
@@ -494,7 +505,7 @@
         },
         {
           "index": 3,
-          "file": "run/frames/jumping/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/jumping/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 10997,
@@ -509,7 +520,7 @@
         },
         {
           "index": 4,
-          "file": "run/frames/jumping/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/jumping/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12269,
@@ -535,7 +546,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/failed/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12917,
@@ -550,7 +561,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/failed/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13083,
@@ -565,7 +576,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/failed/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14907,
@@ -580,7 +591,7 @@
         },
         {
           "index": 3,
-          "file": "run/frames/failed/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 16188,
@@ -595,7 +606,7 @@
         },
         {
           "index": 4,
-          "file": "run/frames/failed/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14214,
@@ -610,7 +621,7 @@
         },
         {
           "index": 5,
-          "file": "run/frames/failed/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 18238,
@@ -625,7 +636,7 @@
         },
         {
           "index": 6,
-          "file": "run/frames/failed/06.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14509,
@@ -640,7 +651,7 @@
         },
         {
           "index": 7,
-          "file": "run/frames/failed/07.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/failed/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12868,
@@ -666,7 +677,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/waiting/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12945,
@@ -681,7 +692,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/waiting/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12599,
@@ -696,7 +707,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/waiting/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12887,
@@ -711,7 +722,7 @@
         },
         {
           "index": 3,
-          "file": "run/frames/waiting/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13758,
@@ -726,7 +737,7 @@
         },
         {
           "index": 4,
-          "file": "run/frames/waiting/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 15238,
@@ -741,7 +752,7 @@
         },
         {
           "index": 5,
-          "file": "run/frames/waiting/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/waiting/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 11542,
@@ -767,7 +778,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/running/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14316,
@@ -782,7 +793,7 @@
         },
         {
           "index": 1,
-          "file": "run/frames/running/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13574,
@@ -797,7 +808,7 @@
         },
         {
           "index": 2,
-          "file": "run/frames/running/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14954,
@@ -812,7 +823,7 @@
         },
         {
           "index": 3,
-          "file": "run/frames/running/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 14047,
@@ -827,7 +838,7 @@
         },
         {
           "index": 4,
-          "file": "run/frames/running/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12979,
@@ -842,7 +853,7 @@
         },
         {
           "index": 5,
-          "file": "run/frames/running/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/running/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13593,
@@ -868,7 +879,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "run/frames/review/00.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13121,
@@ -879,11 +890,11 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 85
+          "chroma_adjacent_pixels": 0
         },
         {
           "index": 1,
-          "file": "run/frames/review/01.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13921,
@@ -894,11 +905,11 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 107
+          "chroma_adjacent_pixels": 0
         },
         {
           "index": 2,
-          "file": "run/frames/review/02.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13117,
@@ -909,11 +920,11 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 110
+          "chroma_adjacent_pixels": 24
         },
         {
           "index": 3,
-          "file": "run/frames/review/03.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13153,
@@ -924,11 +935,11 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 120
+          "chroma_adjacent_pixels": 17
         },
         {
           "index": 4,
-          "file": "run/frames/review/04.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 12264,
@@ -939,11 +950,11 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 72
+          "chroma_adjacent_pixels": 0
         },
         {
           "index": 5,
-          "file": "run/frames/review/05.png",
+          "file": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/repo-update/run/frames/review/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 13040,
@@ -954,7 +965,7 @@
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 96
+          "chroma_adjacent_pixels": 0
         }
       ]
     }

@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "source_atlas": "/Users/gugg/Documents/Codex/2026-07-17/upgrade-the-existing-pet-at-kiko/work/kiko-visual-repair/inputs/kiko-v2-spritesheet.webp",
+  "base_green_hue_degrees": 140.0,
+  "source_row_hues_degrees": {
+    "idle": 45.0,
+    "running-right": 138.0,
+    "running-left": 138.0,
+    "waving": 44.0,
+    "jumping": 25.0,
+    "failed": 205.0,
+    "waiting": 39.0,
+    "running": 155.0,
+    "review": 278.0
+  },
+  "idle_alpha_multipliers": [
+    1.0,
+    0.82,
+    0.55,
+    0.35,
+    0.65,
+    1.0
+  ],
+  "color_plans": {
+    "waving": {
+      "peak_hue": 44.0,
+      "peak_saturation": 0.55,
+      "envelope": [
+        0.0,
+        0.55,
+        1.0,
+        0.55
+      ]
+    },
+    "jumping": {
+      "peak_hue": 25.0,
+      "peak_saturation": 0.58,
+      "envelope": [
+        0.0,
+        0.5,
+        1.0,
+        0.5,
+        0.0
+      ]
+    },
+    "failed": {
+      "peak_hue": 205.0,
+      "peak_saturation": 0.46,
+      "envelope": [
+        0.0,
+        0.33,
+        0.67,
+        1.0,
+        1.0,
+        0.67,
+        0.33,
+        0.0
+      ]
+    },
+    "waiting": {
+      "peak_hue": 39.0,
+      "peak_saturation": 0.52,
+      "envelope": [
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.0
+      ]
+    },
+    "running": {
+      "peak_hue": 155.0,
+      "peak_saturation": 0.45,
+      "envelope": [
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.0
+      ]
+    },
+    "review": {
+      "peak_hue": 278.0,
+      "peak_saturation": 0.38,
+      "envelope": [
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.0
+      ]
+    }
+  },
+  "notes": [
+    "the preparation pass leaves running-right and running-left as placeholders; the final assembly replaces both with the approved repaired gait",
+    "every recolored state enters from default green and exits through either green or an intermediate blend chosen for a smooth repeated loop",
+    "neutral and all 16 approved v2 look cells are preserved from the source atlas"
+  ]
+}

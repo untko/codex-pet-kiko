@@ -15,7 +15,7 @@ else
   exit 1
 fi
 
-mkdir -p "$run_dir/frames" "$run_dir/final" "$run_dir/qa/previews"
+mkdir -p "$run_dir/final" "$run_dir/qa/previews" "$run_dir/v2/final" "$run_dir/v2/qa"
 
 python_bin="${PYTHON:-}"
 if [[ -z "$python_bin" ]]; then
@@ -31,14 +31,8 @@ v1_webp="$run_dir/final/spritesheet.webp"
 v1_validation="$run_dir/final/validation.json"
 v2_atlas="$repo_dir/kiko/spritesheet.webp"
 v2_dir="$run_dir/v2"
-mkdir -p "$v2_dir/qa"
-
-"$python_bin" "$hatch_scripts/extract_strip_frames.py" \
-  --decoded-dir "$run_dir/decoded-clean" \
-  --output-dir "$run_dir/frames" \
-  --states all \
-  --method auto \
-  --key-threshold 0
+build_dir="$(mktemp -d "${TMPDIR:-/tmp}/kiko-rebuild.XXXXXX")"
+trap 'rm -rf "$build_dir"' EXIT
 
 "$python_bin" "$hatch_scripts/inspect_frames.py" \
   --frames-root "$run_dir/frames" \
@@ -47,8 +41,15 @@ mkdir -p "$v2_dir/qa"
 
 "$python_bin" "$hatch_scripts/compose_atlas.py" \
   --frames-root "$run_dir/frames" \
+  --output "$build_dir/spritesheet-standard.png" \
+  --webp-output "$build_dir/spritesheet-standard.webp"
+
+"$python_bin" "$hatch_scripts/despill_chroma_edges.py" \
+  "$build_dir/spritesheet-standard.png" \
   --output "$v1_png" \
-  --webp-output "$v1_webp"
+  --webp-output "$v1_webp" \
+  --json-out "$run_dir/qa/chroma-despill.json" \
+  --chroma-key '#FF00FF'
 
 "$python_bin" "$hatch_scripts/validate_atlas.py" \
   "$v1_webp" \
@@ -63,10 +64,27 @@ mkdir -p "$v2_dir/qa"
   --frames-root "$run_dir/frames" \
   --output-dir "$run_dir/qa/previews"
 
+"$python_bin" "$hatch_scripts/assemble_extended_atlas.py" \
+  --base-atlas "$v1_webp" \
+  --look-cells-dir "$v2_dir/look-cells" \
+  --neutral-cell "$v2_dir/neutral.png" \
+  --output "$build_dir/spritesheet-v2.png" \
+  --webp-output "$build_dir/spritesheet-v2.webp" \
+  --manifest-output "$v2_dir/final/spritesheet-extended.json" \
+  --chroma-key '#FF00FF' \
+  --chroma-threshold 96
+
+"$python_bin" "$hatch_scripts/despill_chroma_edges.py" \
+  "$build_dir/spritesheet-v2.png" \
+  --output "$v2_dir/final/spritesheet.png" \
+  --webp-output "$v2_atlas" \
+  --json-out "$v2_dir/qa/chroma-despill.json" \
+  --chroma-key '#FF00FF'
+
 "$python_bin" "$hatch_scripts/validate_atlas.py" \
   "$v2_atlas" \
-  --json-out "$v2_dir/validation-local.json" \
-  --chroma-key '#00FF00' \
+  --json-out "$v2_dir/validation.json" \
+  --chroma-key '#FF00FF' \
   --require-v2
 
 "$python_bin" "$hatch_scripts/make_contact_sheet.py" \
@@ -77,5 +95,4 @@ mkdir -p "$v2_dir/qa"
   "$v2_atlas" \
   --output "$v2_dir/qa/look-directions.png"
 
-echo "Rebuilt Kiko's 8x9 standard intermediate and validated the packaged v2 atlas"
-echo "The script did not overwrite kiko/spritesheet.webp"
+echo "Rebuilt Kiko's 8x9 standard intermediate and packaged 8x11 v2 atlas"
