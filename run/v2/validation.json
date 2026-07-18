@@ -8,6 +8,7 @@
   "sprite_version_number": 2,
   "width": 1536,
   "height": 2288,
+  "sha256": "0867dbb100adf62662fe9bddbde6dfa682a8f0b9f11622152886ae9f989fb311",
   "transparent_rgb_residue_pixels": 0,
   "errors": [],
   "warnings": [],
@@ -26,7 +27,7 @@
       "row": 0,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 13373,
+      "nontransparent_pixels": 13391,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -35,7 +36,7 @@
       "row": 0,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 13207,
+      "nontransparent_pixels": 11475,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -44,7 +45,7 @@
       "row": 0,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 13089,
+      "nontransparent_pixels": 13045,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -53,7 +54,7 @@
       "row": 0,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 13107,
+      "nontransparent_pixels": 13749,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -62,7 +63,7 @@
       "row": 0,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 13165,
+      "nontransparent_pixels": 12495,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -70,8 +71,8 @@
       "state": "idle",
       "row": 0,
       "column": 6,
-      "used": true,
-      "nontransparent_pixels": 13374,
+      "used": false,
+      "nontransparent_pixels": 0,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -98,7 +99,7 @@
       "row": 1,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 14493,
+      "nontransparent_pixels": 13042,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -107,7 +108,7 @@
       "row": 1,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 15787,
+      "nontransparent_pixels": 14587,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -116,7 +117,7 @@
       "row": 1,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 14831,
+      "nontransparent_pixels": 14103,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -125,7 +126,7 @@
       "row": 1,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 15484,
+      "nontransparent_pixels": 13409,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -134,7 +135,7 @@
       "row": 1,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 15639,
+      "nontransparent_pixels": 13711,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -143,7 +144,7 @@
       "row": 1,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 14321,
+      "nontransparent_pixels": 13676,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -152,7 +153,7 @@
       "row": 1,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 16007,
+      "nontransparent_pixels": 13711,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -170,7 +171,7 @@
       "row": 2,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 14493,
+      "nontransparent_pixels": 13042,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -179,7 +180,7 @@
       "row": 2,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 15787,
+      "nontransparent_pixels": 14587,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -188,7 +189,7 @@
       "row": 2,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 14831,
+      "nontransparent_pixels": 14103,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -197,7 +198,7 @@
       "row": 2,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 15484,
+      "nontransparent_pixels": 13409,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -206,7 +207,7 @@
       "row": 2,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 15639,
+      "nontransparent_pixels": 13711,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -215,7 +216,7 @@
       "row": 2,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 14321,
+      "nontransparent_pixels": 13676,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -224,7 +225,7 @@
       "row": 2,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 16007,
+      "nontransparent_pixels": 13711,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -233,7 +234,7 @@
       "row": 3,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 13475,
+      "nontransparent_pixels": 13457,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -242,7 +243,7 @@
       "row": 3,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 13980,
+      "nontransparent_pixels": 13960,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -251,7 +252,7 @@
       "row": 3,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 14017,
+      "nontransparent_pixels": 13996,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -260,7 +261,7 @@
       "row": 3,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 13161,
+      "nontransparent_pixels": 13140,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -314,7 +315,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 10848,
+      "nontransparent_pixels": 10832,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -323,7 +324,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 9636,
+      "nontransparent_pixels": 9625,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -332,7 +333,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 10997,
+      "nontransparent_pixels": 10992,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -377,7 +378,7 @@
       "row": 5,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 12917,
+      "nontransparent_pixels": 12892,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -386,7 +387,7 @@
       "row": 5,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 13083,
+      "nontransparent_pixels": 13058,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -395,7 +396,7 @@
       "row": 5,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 14907,
+      "nontransparent_pixels": 14883,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -404,7 +405,7 @@
       "row": 5,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 16188,
+      "nontransparent_pixels": 16168,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -431,7 +432,7 @@
       "row": 5,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 14509,
+      "nontransparent_pixels": 14486,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -440,7 +441,7 @@
       "row": 5,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 12868,
+      "nontransparent_pixels": 12845,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -449,7 +450,7 @@
       "row": 6,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 12945,
+      "nontransparent_pixels": 12931,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -458,7 +459,7 @@
       "row": 6,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 12599,
+      "nontransparent_pixels": 12580,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -467,7 +468,7 @@
       "row": 6,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 12887,
+      "nontransparent_pixels": 12862,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -476,7 +477,7 @@
       "row": 6,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 13758,
+      "nontransparent_pixels": 13737,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -494,7 +495,7 @@
       "row": 6,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 11542,
+      "nontransparent_pixels": 11516,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -521,7 +522,7 @@
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 14316,
+      "nontransparent_pixels": 14301,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -530,7 +531,7 @@
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 13574,
+      "nontransparent_pixels": 13559,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -539,7 +540,7 @@
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 14954,
+      "nontransparent_pixels": 14941,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -548,7 +549,7 @@
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 14047,
+      "nontransparent_pixels": 14035,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -557,7 +558,7 @@
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 12979,
+      "nontransparent_pixels": 12964,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -566,7 +567,7 @@
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 13593,
+      "nontransparent_pixels": 13580,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -593,7 +594,7 @@
       "row": 8,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 13121,
+      "nontransparent_pixels": 13094,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -602,7 +603,7 @@
       "row": 8,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 13921,
+      "nontransparent_pixels": 13894,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -611,7 +612,7 @@
       "row": 8,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 13117,
+      "nontransparent_pixels": 13093,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -620,7 +621,7 @@
       "row": 8,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 13153,
+      "nontransparent_pixels": 13124,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -629,7 +630,7 @@
       "row": 8,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 12264,
+      "nontransparent_pixels": 12235,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -638,7 +639,7 @@
       "row": 8,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 13040,
+      "nontransparent_pixels": 13012,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -665,7 +666,7 @@
       "row": 9,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 12313,
+      "nontransparent_pixels": 12270,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -683,7 +684,7 @@
       "row": 9,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 12015,
+      "nontransparent_pixels": 11979,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -692,7 +693,7 @@
       "row": 9,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 11943,
+      "nontransparent_pixels": 11908,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -701,7 +702,7 @@
       "row": 9,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 12014,
+      "nontransparent_pixels": 11976,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -710,7 +711,7 @@
       "row": 9,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 12232,
+      "nontransparent_pixels": 12193,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -719,7 +720,7 @@
       "row": 9,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 12237,
+      "nontransparent_pixels": 12198,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -728,7 +729,7 @@
       "row": 9,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 11825,
+      "nontransparent_pixels": 11783,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -737,7 +738,7 @@
       "row": 10,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 10018,
+      "nontransparent_pixels": 9982,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -746,7 +747,7 @@
       "row": 10,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 10005,
+      "nontransparent_pixels": 11783,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -755,7 +756,7 @@
       "row": 10,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 9979,
+      "nontransparent_pixels": 12198,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -764,7 +765,7 @@
       "row": 10,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 9750,
+      "nontransparent_pixels": 12193,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -773,7 +774,7 @@
       "row": 10,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 9162,
+      "nontransparent_pixels": 12014,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -782,7 +783,7 @@
       "row": 10,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 9139,
+      "nontransparent_pixels": 11908,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -791,7 +792,7 @@
       "row": 10,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 9113,
+      "nontransparent_pixels": 11979,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -800,7 +801,7 @@
       "row": 10,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 9105,
+      "nontransparent_pixels": 12378,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     }
