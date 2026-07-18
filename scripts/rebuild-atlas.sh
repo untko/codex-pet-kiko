@@ -29,10 +29,6 @@ fi
 v1_png="$run_dir/final/spritesheet.png"
 v1_webp="$run_dir/final/spritesheet.webp"
 v1_validation="$run_dir/final/validation.json"
-v2_atlas="$repo_dir/kiko/spritesheet.webp"
-v2_dir="$run_dir/v2"
-mkdir -p "$v2_dir/qa"
-
 "$python_bin" "$hatch_scripts/extract_strip_frames.py" \
   --decoded-dir "$run_dir/decoded-clean" \
   --output-dir "$run_dir/frames" \
@@ -52,8 +48,7 @@ mkdir -p "$v2_dir/qa"
 
 "$python_bin" "$hatch_scripts/validate_atlas.py" \
   "$v1_webp" \
-  --json-out "$v1_validation" \
-  --chroma-key '#FF00FF'
+  --json-out "$v1_validation"
 
 "$python_bin" "$hatch_scripts/make_contact_sheet.py" \
   "$v1_webp" \
@@ -63,19 +58,7 @@ mkdir -p "$v2_dir/qa"
   --frames-root "$run_dir/frames" \
   --output-dir "$run_dir/qa/previews"
 
-"$python_bin" "$hatch_scripts/validate_atlas.py" \
-  "$v2_atlas" \
-  --json-out "$v2_dir/validation-local.json" \
-  --chroma-key '#00FF00' \
-  --require-v2
-
-"$python_bin" "$hatch_scripts/make_contact_sheet.py" \
-  "$v2_atlas" \
-  --output "$v2_dir/qa/contact-sheet.png"
-
-"$python_bin" "$hatch_scripts/make_direction_qa_sheet.py" \
-  "$v2_atlas" \
-  --output "$v2_dir/qa/look-directions.png"
+"$python_bin" "$repo_dir/scripts/update-v2-assets.py"
 
 echo "Rebuilt Kiko's 8x9 standard intermediate and validated the packaged v2 atlas"
 echo "The script did not overwrite kiko/spritesheet.webp"

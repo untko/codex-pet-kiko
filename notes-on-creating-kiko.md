@@ -1,6 +1,6 @@
 # Notes on creating the Kiko Codex pet
 
-Last updated: 2026-07-17 (Asia/Bangkok)
+Last updated: 2026-07-18 (Asia/Bangkok)
 
 ## Goal
 
@@ -35,7 +35,13 @@ The original standard-animation atlas is `1536 × 1872`, divided into `192 × 20
 8. `running` — 6 teal focused-work frames
 9. `review` — 6 lavender frames
 
-The packaged v2 atlas preserves those nine rows and adds two look-direction rows, producing an 8-column by 11-row `1536 × 2288` atlas. Row 9 contains `000` through `157.5`; row 10 contains `180` through `337.5`, in clockwise 22.5-degree steps. Unused atlas cells are fully transparent.
+The packaged v2 atlas preserves the standard six-frame idle row and the remaining standard-state counts, then adds two look-direction rows, producing an 8-column by 11-row `1536 × 2288` atlas. Row 9 contains `000` through `157.5`; row 10 contains `180` through `337.5`, in clockwise 22.5-degree steps. Unused atlas cells are fully transparent.
+
+## Latest atlas refresh
+
+On 2026-07-18, the packaged `kiko/spritesheet.webp` was replaced with the latest user-approved v2 atlas. The installable package is authoritative. Earlier generated strips, extracted frames, the 8×9 intermediate, GIFs, and manual-review records remain in `run/` as creation history rather than byte-for-byte rebuild inputs for the latest package.
+
+The current v2 contact sheet, direction sheet, and structural validation are regenerated directly from the packaged atlas with `scripts/update-v2-assets.py`. This keeps derived assets synchronized without rewriting the historical generation record.
 
 ## V2 look-direction upgrade
 
@@ -56,7 +62,7 @@ The accepted rightward strip was safe to mirror because Kiko has no text, logos,
 
 ### Accepted and repaired rows
 
-- `idle`: accepted; calm six-frame blink and head-bob loop
+- `idle`: six-frame camouflage-fade and blink sequence
 - `running-right`: regenerated after the first version crossed slot boundaries; the accepted replacement uses a smaller sprite and compact tail
 - `running-left`: deterministically mirrored from the repaired rightward strip
 - `waving`: accepted; four prop-free hand poses
@@ -100,7 +106,7 @@ python ~/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py \
 
 ## Deterministic assembly
 
-The bundled `hatch-pet` helpers performed frame extraction, inspection, atlas composition, validation, contact-sheet creation, and GIF rendering. `scripts/rebuild-atlas.sh` captures the portable rebuild commands.
+The bundled `hatch-pet` helpers performed the original frame extraction, inspection, atlas composition, validation, contact-sheet creation, and GIF rendering. `scripts/rebuild-atlas.sh` captures those historical rebuild commands, while `scripts/update-v2-assets.py` validates the current package and regenerates its v2 QA sheets.
 
 The packaged v2 validation result is:
 
@@ -120,7 +126,7 @@ The packaged v2 validation result is:
 }
 ```
 
-Frame inspection also reported `ok: true` with no errors or warnings. The final contact sheet, all nine motion loops, and the 16-direction look family were visually inspected for identity, palette, clipping, detached artifacts, state semantics, direction meaning, and continuity.
+The latest package passes structural validation with no errors or warnings. Historical frame inspection and manual semantic-review records remain under `run/`; they should not be interpreted as a fresh independent review of later atlas replacements.
 
 ## Package
 
