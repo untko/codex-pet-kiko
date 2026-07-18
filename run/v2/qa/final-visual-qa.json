@@ -1,7 +1,9 @@
 {
   "visual_qa": "pass",
-  "qa_note": "Kiko's nine standard animations and 16-direction loop preserve the established 3D gecko identity, read correctly at pet size, and pass all deterministic and blind QA gates.",
+  "spritesheet_sha256": "dadeab52face9c15e29a9e5e28ae3860b9634ebf4ce7aca42b59c484bd6f3a2f",
+  "qa_note": "Kiko's latest nine standard animations and unchanged 16-direction loop preserve the established 3D gecko identity, read correctly at pet size, and pass deterministic and independent visual QA.",
   "review_warnings": [
+    "Intentional idle camouflage transparency and the historically accepted running-left frame 2 and jumping poses remain unchanged.",
     "157.5->180 and 337.5->000 are metric outliers, but normal-size review shows natural foreshortening with planted feet, stable torso and tail, and no conspicuous snap or reversal.",
     "Reported lower-body transparency is intentional separation between feet, legs, and tail rather than an interior body hole.",
     "Legacy standard rows retain intentional state-coded hue shifts while preserving identity."

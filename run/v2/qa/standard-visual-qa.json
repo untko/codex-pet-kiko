@@ -1,6 +1,11 @@
 {
   "visual_qa": "pass",
-  "qa_note": "All nine standard rows preserve Kiko's color-reactive gecko identity and style, with complete readable cycles, correct directional gait, stable sizing, clean silhouettes, and appropriate state semantics.",
+  "spritesheet_sha256": "dadeab52face9c15e29a9e5e28ae3860b9634ebf4ce7aca42b59c484bd6f3a2f",
+  "qa_note": "The latest manually finished atlas preserves Kiko's color-reactive gecko identity across all nine standard rows; the repaired failed-state frame is complete, registered, and continuous on dark, light, and checkerboard backgrounds.",
+  "review_warnings": [
+    "Intentional idle camouflage transparency is preserved.",
+    "Historically accepted running-left frame 2 and jumping poses are unchanged from the previously approved atlas."
+  ],
   "repair_rows": [],
   "reviewed_by": "independent visual QA worker"
 }

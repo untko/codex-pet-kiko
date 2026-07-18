@@ -41,6 +41,8 @@ The packaged v2 atlas preserves the standard six-frame idle row and the remainin
 
 On 2026-07-18, the packaged `kiko/spritesheet.webp` was replaced with the latest user-approved v2 atlas. The installable package is authoritative. Earlier generated strips, extracted frames, the 8×9 intermediate, GIFs, and manual-review records remain in `run/` as creation history rather than byte-for-byte rebuild inputs for the latest package.
 
+During the final repository refresh, failed-state row 5 frame 4 was found translated about 6 pixels right and 14 pixels down, clipping its outer edge. The complete frame was restored at its prior registered position without changing the other cells, then the atlas and all current v2 QA artifacts were regenerated and reviewed again.
+
 The current v2 contact sheet, direction sheet, and structural validation are regenerated directly from the packaged atlas with `scripts/update-v2-assets.py`. This keeps derived assets synchronized without rewriting the historical generation record.
 
 ## Manual finishing workflow
