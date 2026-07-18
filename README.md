@@ -37,6 +37,14 @@ The manifest explicitly sets `"spriteVersionNumber": 2`. While Kiko is awake as 
 | `running` | 6 | Teal | Prop-free focused work loop |
 | `review` | 6 | Lavender | Skeptical squint, head tilt, chin touch |
 
+## State previews
+
+| | | |
+|---|---|---|
+| **Idle**<br>![Kiko idle animation](run/v2/qa/previews/idle.gif) | **Running right**<br>![Kiko running right](run/v2/qa/previews/running-right.gif) | **Running left**<br>![Kiko running left](run/v2/qa/previews/running-left.gif) |
+| **Waving**<br>![Kiko waving](run/v2/qa/previews/waving.gif) | **Jumping**<br>![Kiko jumping](run/v2/qa/previews/jumping.gif) | **Failed**<br>![Kiko failed state](run/v2/qa/previews/failed.gif) |
+| **Waiting**<br>![Kiko waiting](run/v2/qa/previews/waiting.gif) | **Working**<br>![Kiko working](run/v2/qa/previews/running.gif) | **Reviewing**<br>![Kiko reviewing](run/v2/qa/previews/review.gif) |
+
 ## Look directions
 
 The first nine rows preserve Kiko's original animations. Rows 9 and 10 add 16 clockwise look poses in 22.5-degree steps:
@@ -59,7 +67,7 @@ The finished v2 atlas follows the Codex extended pet contract: an 8-column by 11
 - `run/frames/` — original extracted `192 × 208` animation frames
 - `run/final/` — original reproducible 8×9 standard-animation intermediate
 - `run/qa/` — original nine-state contact sheet, GIF previews, and QA JSON
-- `run/v2/` — current package validation and generated v2 QA sheets, plus historical review records
+- `run/v2/` — current package validation, animated state previews, generated v2 QA sheets, and historical review records
 - `notes-on-creating-kiko.md` — detailed workflow notebook
 - `scripts/install.sh` — local installer
 - `scripts/rebuild-atlas.sh` — deterministic rebuild from cleaned strips

@@ -30,6 +30,18 @@ ROW_DEFINITIONS = [
     ("look-180-to-337.5", 8),
 ]
 
+PREVIEW_DURATIONS = {
+    "idle": [280, 110, 110, 140, 140, 320],
+    "running-right": [120, 120, 120, 120, 120, 120, 120, 220],
+    "running-left": [120, 120, 120, 120, 120, 120, 120, 220],
+    "waving": [140, 140, 140, 280],
+    "jumping": [140, 140, 140, 140, 280],
+    "failed": [140, 140, 140, 140, 140, 140, 140, 240],
+    "waiting": [150, 150, 150, 150, 150, 260],
+    "running": [120, 120, 120, 120, 120, 220],
+    "review": [150, 150, 150, 150, 150, 280],
+}
+
 DIRECTIONS = [
     ("000", "up"),
     ("022.5", "up-right"),
@@ -297,6 +309,26 @@ def make_direction_sheet(atlas: Image.Image, output: Path) -> None:
     sheet.save(output)
 
 
+def make_animation_previews(atlas: Image.Image, output_dir: Path) -> None:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for row, (state, frame_count) in enumerate(ROW_DEFINITIONS[:9]):
+        durations = PREVIEW_DURATIONS[state]
+        if len(durations) != frame_count:
+            raise ValueError(
+                f"{state} has {frame_count} frames but {len(durations)} durations"
+            )
+        frames = [crop_cell(atlas, row, column) for column in range(frame_count)]
+        frames[0].save(
+            output_dir / f"{state}.gif",
+            save_all=True,
+            append_images=frames[1:],
+            duration=durations,
+            loop=0,
+            disposal=2,
+            optimize=False,
+        )
+
+
 def main() -> None:
     repo_dir = Path(__file__).resolve().parent.parent
     atlas_path = repo_dir / "kiko/spritesheet.webp"
@@ -312,6 +344,7 @@ def main() -> None:
     )
     make_contact_sheet(atlas, repo_dir / "run/v2/qa/contact-sheet.png")
     make_direction_sheet(atlas, repo_dir / "run/v2/qa/look-directions.png")
+    make_animation_previews(atlas, repo_dir / "run/v2/qa/previews")
 
     summary = {key: value for key, value in validation.items() if key != "cells"}
     print(json.dumps(summary, indent=2))

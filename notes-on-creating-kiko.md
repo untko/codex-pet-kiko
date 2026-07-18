@@ -43,6 +43,20 @@ On 2026-07-18, the packaged `kiko/spritesheet.webp` was replaced with the latest
 
 The current v2 contact sheet, direction sheet, and structural validation are regenerated directly from the packaged atlas with `scripts/update-v2-assets.py`. This keeps derived assets synchronized without rewriting the historical generation record.
 
+## Manual finishing workflow
+
+Automated image generation is useful for producing an initial character and motion draft, but it did not consistently meet the desired quality for Kiko's final animation. The generated rows are therefore treated as starting material rather than finished assets.
+
+Each animation frame is reviewed and manually edited to refine Kiko's identity, expression, silhouette, color transition, transparency, motion cadence, and continuity with adjacent frames. Once the full atlas is satisfactory, the manually finished image replaces `kiko/spritesheet.webp`; that packaged WebP is the authoritative artwork.
+
+After any manual atlas update, run:
+
+```bash
+python3 scripts/update-v2-assets.py
+```
+
+This validates the 8×11 contract and regenerates the contact sheet, look-direction sheet, and animated state GIFs from the approved WebP. It does not regenerate or overwrite the manually edited artwork.
+
 ## V2 look-direction upgrade
 
 Kiko's v2 look family keeps both feet, pelvis, lower torso, and low tail anchored. The complete physical eyeballs lead the gaze, with restrained head yaw or pitch and a smoothly bending neck. The original warm brown-and-gold eye construction, green/turquoise body, cream belly, scale, and facial proportions remain consistent.
