@@ -5,6 +5,7 @@ This directory contains current machine-generated evidence for Kiko's packaged 8
 - `validation.json` — structural validation of the packaged `kiko/spritesheet.webp`
 - `qa/contact-sheet.png` — all nine animation rows plus two direction rows
 - `qa/look-directions.png` — neutral pose and all 16 labeled directions
+- `qa/previews/` — current animated GIF previews for all nine task states
 - `qa/look-mechanics.md` — character-specific gaze mechanics from the original upgrade
 - `qa/repair-log.json` — historical rejected direction-row attempts and accepted repair
 - `qa/direction-semantics.json` — historical labeled semantic verdicts
@@ -15,4 +16,4 @@ This directory contains current machine-generated evidence for Kiko's packaged 8
 
 The packaged atlas has `spriteVersionNumber: 2`, dimensions `1536 × 2288`, six idle frames, transparent unused cells, and no structural validation errors or warnings.
 
-Run `python3 scripts/update-v2-assets.py` after replacing the packaged spritesheet. It rewrites `validation.json`, `qa/contact-sheet.png`, and `qa/look-directions.png` directly from `kiko/spritesheet.webp`. Manual semantic and continuity records are intentionally historical unless a new review explicitly replaces them.
+Run `python3 scripts/update-v2-assets.py` after replacing the packaged spritesheet. It rewrites `validation.json`, `qa/contact-sheet.png`, `qa/look-directions.png`, and all GIFs under `qa/previews/` directly from `kiko/spritesheet.webp`. Manual semantic and continuity records are intentionally historical unless a new review explicitly replaces them.
